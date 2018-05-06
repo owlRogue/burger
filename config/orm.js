@@ -30,7 +30,7 @@ function objToSql(ob) {
         value = "'" + value + "'";
       }
       // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {devoured: true} => ["devoured=true"]
+      // e.g. {devoured: 1} => ["devoured=true"]
       arr.push(key + "=" + value);
     }
   }
@@ -87,21 +87,8 @@ var orm = {
 
       cb(result);
     });
-  },
-  delete: function(table, condition, cb) {
-    var queryString = "DELETE FROM " + table;
-    queryString += " WHERE ";
-    queryString += condition;
-
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
   }
 };
 
-// Export the orm object for the model (burger.js).
+// Export the orm object for the model (burgers.js).
 module.exports = orm;
