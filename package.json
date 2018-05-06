@@ -15,7 +15,8 @@
     "express-handlebars": "^2.0.1",
     "graceful-fs": "^4.1.11",
     "mysql": "^2.15.0",
-    "nodemon": "^1.17.4"
+    "nodemon": "^1.17.4",
+    "uglify-js": "^2.6.0"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
