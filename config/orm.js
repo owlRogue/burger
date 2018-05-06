@@ -6,13 +6,6 @@ var connection = require("../config/connection.js");
 // In order to write the query, we need 3 question marks.
 // The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
 // ["?", "?", "?"].toString() => "?,?,?";
-
-// * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
-
-// * `selectAll()`
-// * `insertOne()`
-// * `updateOne()`
-
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -57,7 +50,6 @@ var orm = {
       cb(result);
     });
   },
-
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -78,7 +70,6 @@ var orm = {
       cb(result);
     });
   },
-
   // An example of objColVals would be {name: panther, devoured: true}
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
@@ -97,25 +88,20 @@ var orm = {
       cb(result);
     });
   },
+  delete: function(table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
 
-  //  DELETE
-//   delete: function(table, condition, cb) {
-//     var queryString = "DELETE FROM " + table;
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
 
-//     queryString += " WHERE ";
-//     queryString += condition;
-
-//     console.log(queryString);
-//     connection.query(queryString, function(err, result) {
-//       if (err) {
-//         throw err;
-//       }
-
-//       cb(result);
-//     });
-//   }
-
+      cb(result);
+    });
+  }
 };
 
-// Export the orm object for the model (buger.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
