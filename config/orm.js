@@ -30,7 +30,7 @@ function objToSql(ob) {
         value = "'" + value + "'";
       }
       // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {devoured: 1} => ["devoured=true"]
+      // e.g. {ordered: 1} => ["ordered=true"]
       arr.push(key + "=" + value);
     }
   }
@@ -70,7 +70,7 @@ var orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, devoured: true}
+  // An example of objColVals would be {name: panther, ordered: true}
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 

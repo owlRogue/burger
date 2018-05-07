@@ -1,14 +1,14 @@
 ### Schema
 
-CREATE DATABASE cat_db;
-USE cat_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
-CREATE TABLE cats
+CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
-	sleepy BOOLEAN DEFAULT false,
+	ordered BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
 
-mysql --host=127.0.0.1 --port=3306 --user=root --password=root
+--  mysql --host=127.0.0.1 --port=3306 --user=root --password=root

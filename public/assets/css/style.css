@@ -41,7 +41,7 @@ ul {
   clear: both;
 }
 
-#col-1 button.change-devoured {
+#col-1 button.change-ordered {
   background-color: rgb(193, 231, 193);
   border-radius: 10px;
   color: white;
@@ -50,7 +50,7 @@ ul {
   border: 0px;
 }
 
-#col-2 button.change-devoured {
+#col-2 button.change-ordered {
   background-color: rgb(186, 162, 162);
   border-radius: 10px;
   opacity: .73;
