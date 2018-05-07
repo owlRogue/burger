@@ -19,7 +19,11 @@
   </div>
 
 </div>
+<br>
+<br>
 
+<div style="height:3px; background-color:darkgray"></div>
+<br>
 <h2>Custom Burger Order</h2>
 <form class="create-form">
 
@@ -31,11 +35,11 @@
   <br>
 
   <div class="form-group">
-    <label for="ordered">Select up to three?</label>
+    <label for="ordered">Are you sure you want to order this custom burger? Taste is subject to variation. </label>
     <br>
-    <input type="radio" name="ordered" value="1" checked> Yes!
+    <input type="radio" name="ordered" value="1" checked> yes, I'm sure
     <br>
-    <input type="radio" name="ordered" value="0"> No I have not tried it before...
+    {{!-- <input type="radio" name="ordered" value="0"> order --}}
   </div>
 
   <button type="submit">Add Burger</button>
