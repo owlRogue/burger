@@ -6,9 +6,11 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 ### Important
 
-Be sure to utilize the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHerokuDeploymentProcess.pdf) in order to deploy your assignment. -->
+--> 
 
-<!-- ### Before You Begin
+Be sure to utilize the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHerokuDeploymentProcess.pdf) in order to deploy your assignment. 
+
+ ### Before You Begin
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
@@ -20,6 +22,7 @@ Be sure to utilize the [MYSQL Heroku Deployment Guide](../Supplemental/MySQLHero
 
 * [Check out this video of the app for a run-through of how it works](burger_demo.mp4).
 
+<!--
 ## Instructions
 
 #### App Setup
