@@ -1,7 +1,13 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #f0f1f4;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2px;
 }
 
 .label {
@@ -28,4 +34,23 @@ li {
   content: "";
   display: table;
   clear: both;
+}
+
+#col-1 button.change-devoured {
+  background-color: rgb(193, 231, 193);
+  border-radius: 10px;
+  color: white;
+  font-weight: 300;
+  float: right;
+  border: 0px;
+}
+
+#col-2 button.change-devoured {
+  background-color: rgb(186, 162, 162);
+  border-radius: 10px;
+  opacity: .73;
+  color: white;
+  font-weight: 300;
+  float: right;
+  border: 0px;
 }
