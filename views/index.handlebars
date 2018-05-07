@@ -1,9 +1,9 @@
 <div class="row">
-  <h1>Burgers!</h1>
+  <h1>Burger Bungalow</h1>
 
 
   <div class="column" id="col-1">
-    <h2>Burgers Menu!</h2>
+    <h2>Burgers Menu</h2>
 
     <ul>
       {{#each burgers}} {{#unless ordered}} {{> burgers/burger-block ordered=true}} {{/unless}} {{/each}}
@@ -28,9 +28,12 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="burger_name">Burger Name:</label>
+    <label for="burger_name"></label>
     <br>
-    <input type="text" id="burger_name" name="burger_name">
+    Burger Name: <input type="text" id="burger_name" name="burger_name">
+    <br>
+    {{!-- Toppings:    <input type="text" id="toppings" name="toppings">
+    <br> --}}
   </div>
   <br>
 
