@@ -77,12 +77,21 @@ ul {
   border: 0px;
 }
 
-#col-1, #col-2{
+#col-1, #col-2 {
   background-color: white;
   border-radius: 15px;
   margin-top: 15px;
   width: 450px;
-  padding: 0px 0px 0px 5px;
+  padding: 5px;
+}
+
+#col-3 {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 860px;
+  padding: 10px;
+  margin-bottom: 60px;
 }
 
 #col-1 {
