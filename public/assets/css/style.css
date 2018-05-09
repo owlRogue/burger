@@ -1,6 +1,22 @@
 body {
   font-family: "Josefin Sans";
   background-color: aliceblue;
+  margin: 5px;
+}
+
+.navbar {
+  background-color: gray;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+h1 {
+  margin: 0px;
+  padding: 10px 10px 5px 5px;
+}
+
+h2 {
+  margin-left: 10px;
 }
 
 li {
@@ -13,6 +29,7 @@ li {
 ul {
   list-style-type: none;
   padding: 2px;
+  width: 440px;
 }
 
 .label {
@@ -53,9 +70,25 @@ ul {
 #col-2 button.change-ordered {
   background-color: rgb(186, 162, 162);
   border-radius: 10px;
-  opacity: .73;
+  opacity: 0.73;
   color: white;
   font-weight: 300;
   float: right;
   border: 0px;
+}
+
+#col-1, #col-2{
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 450px;
+  padding: 0px 0px 0px 5px;
+}
+
+#col-1 {
+margin-left: 2px;
+}
+
+#col-2 {
+margin-left: 15px;
 }

@@ -1,10 +1,12 @@
 
+<div class="navbar">
+  <h1>K-Chiaro Burgers</h1>
+  </div>
 <div class="row">
-  <h1>Burgers!</h1>
 
 
   <div class="column" id="col-1">
-    <h2>Burgers Menu!</h2>
+    <h2>Burgers Menu</h2>
 
     <ul>
       {{#each burgers}} {{#unless ordered}} {{> burgers/burger-block ordered=true}} {{/unless}} {{/each}}
