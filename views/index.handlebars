@@ -56,7 +56,7 @@
     <h2>Non-Burger Custom Orders</h2>
 
     <ul>
-      {{#each nonburgers}} {{#unless ordered}} {{> nonburgers/burger-block ordered=true}} {{/unless}} {{/each}}
+      {{#each nonburgers}} {{#unless b_ordered}} {{> nonburgers/burger-block b_ordered=true}} {{/unless}} {{/each}}
     </ul>
   </div>
 
@@ -64,7 +64,7 @@
     <h2>Your Order</h2>
 
     <ul>
-      {{#each nonburgers}} {{#if ordered}} {{> nonburgers/burger-block ordered=false}} {{/if}} {{/each}}
+      {{#each nonburgers}} {{#if b_ordered}} {{> nonburgers/burger-block b_ordered=false}} {{/if}} {{/each}}
     </ul>
   </div>
 </div>
