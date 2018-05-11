@@ -1,6 +1,6 @@
 ### Schema
 
-CREATE DATABASE burgers_db;
+-- CREATE DATABASE burgers_db;
 USE burgers_db;
 
 CREATE TABLE burgers
@@ -11,4 +11,9 @@ CREATE TABLE burgers
 	PRIMARY KEY (id)
 );
 
---  mysql --host=127.0.0.1 --port=3306 --user=root --password=root
+INSERT INTO burgers (name) VALUES ('cheese burger');
+INSERT INTO burgers (name) VALUES ('pickle burger');
+INSERT INTO burgers (name) VALUES ('blackbean burger');
+INSERT INTO burgers (name) VALUES ('classic burger');
+INSERT INTO burgers (name) VALUES ('bison burger');
+INSERT INTO burgers (name) VALUES ('pizza burger');
