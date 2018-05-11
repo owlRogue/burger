@@ -7,15 +7,14 @@ var connection;
     connection = mysql.createConnection(process.env.JAWSDB_URL) }
     // var thing = new Thing(process.env.JAWSDB_URL);
   else {
-connection = mysql.createConnection({
-  port: 3306,
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "burgers_db"
-});
+    connection = mysql.createConnection({
+      port: 3306,
+      host: "localhost",
+      user: "root",
+      password: "root",
+      database: "burgers_db"
+    });
   };
-g
 // Make connection.
 connection.connect(function(err) {
   if (err) {
