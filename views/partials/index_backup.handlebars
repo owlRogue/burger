@@ -1,10 +1,8 @@
-
 <div class="navbar">
   <h1>K-Chiaro Burgers and More</h1>
-  </div>
+</div>
 
 <div class="row">
-
 
   <div class="column" id="col-1">
     <h2>Burgers Menu</h2>
@@ -31,7 +29,7 @@
 
 <div id="col-3" class="row">
 
-<form class="create-form" style={"border-width": 4px}>
+  <form class="create-form" style={ "border-width": 4px}>
     <div class="form-group">
       <label for="burger_name">Burger Name:</label>
       <br>
@@ -40,12 +38,31 @@
 
     <div class="form-group">
       <label for="ordered">Are you sure you want to order this custom burger? Taste is subject to variation. </label>
-    <br>
+      <br>
       <input type="radio" name="ordered" value="1" required> yes, I'm sure {{!--
       <input type="radio" name="ordered" value="0"> order --}}
     </div>
 
-    <button type="submit">Add Burger</button>
-</form>
+    <button type="submit">Add Non-Burger Item</button>
+  </form>
 </div>
 
+<div class="row">
+
+
+  <div class="column" id="col-1">
+    <h2>Non-Burger Items</h2>
+
+    <ul>
+      {{#each nonburgers}} {{#unless b_ordered}} {{> nonburgers/burger-block b_ordered=true}} {{/unless}} {{/each}}
+    </ul>
+  </div>
+
+  <div class="column" id="col-2">
+    <h2>Your Order</h2>
+
+    <ul>
+      {{#each nonburgers}} {{#if b_ordered}} {{> nonburgers/burger-block b_ordered=false}} {{/if}} {{/each}}
+    </ul>
+  </div>
+</div>
