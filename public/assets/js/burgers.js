@@ -43,27 +43,27 @@ $(function() {
     );
   });
 
-  $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
-    event.preventDefault();
+  // $(".create-form-non").on("submit", function(event) {
+  //   // Make sure to preventDefault on a submit event.
+  //   event.preventDefault();
 
-    var newNonBurger = {
-      burger_name: $("#nonburger_name").val().trim(),
-      ordered: $("[name=b_ordered]:checked").val().trim()
-    };
+  //   var newNonBurger = {
+  //     burger_name: $("#nonburger_name").val().trim(),
+  //     ordered: $("[name=b_ordered]:checked").val().trim()
+  //   };
 
-    // Send the POST request.
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: newNonBurger
-    }).then(
-      function() {
-        console.log("created new burger: ", newNonBurger);
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-  });
+  //   // Send the POST request.
+  //   $.ajax("/api/nonburgers", {
+  //     type: "POST",
+  //     data: newNonBurger
+  //   }).then(
+  //     function() {
+  //       console.log("created new burger: ", newNonBurger);
+  //       // Reload the page to get the updated list
+  //       location.reload();
+  //     }
+  //   );
+  // });
 
 });
 
