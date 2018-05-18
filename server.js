@@ -1,6 +1,7 @@
 var express = require("express");
-var bodyParser = require("bad-words");
 var bodyParser = require("body-parser");
+var Filter = require('bad-words'),
+  filter = new Filter();
 
 var PORT = process.env.PORT || 8080;
 
@@ -32,9 +33,6 @@ app.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });
-
-var Filter = require('bad-words'),
-  filter = new Filter();
 
 console.log(filter.clean("Don't be an ash0le")); //Don't be an ******
 console.log(filter.clean("Don't be a dick")); //Don't be a ****

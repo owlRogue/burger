@@ -42,7 +42,7 @@ $(function() {
       }
     );
   });
-
+});
   // $(".create-form-non").on("submit", function(event) {
   //   // Make sure to preventDefault on a submit event.
   //   event.preventDefault();
@@ -65,7 +65,7 @@ $(function() {
   //   );
   // });
 
-});
+
 
 
       // order_list: false,
